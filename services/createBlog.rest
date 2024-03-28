@@ -1,0 +1,10 @@
+POST http://localhost:8000/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik9sdXdhcGVsdW1pIiwiaWQiOiI2NjA1ODJkMmQ2YmZiNWZiMWRiNTcyZDYiLCJpYXQiOjE3MTE2MzcyMjh9.Iud1G31NWzP10s3fkaON6EmS99QTILdvHE6XobsGPf4
+
+{
+    "title":"I am progressing in all of my ways",
+    "author": "Wahab",
+    "url" : "http://localhost:8000/workingformygood",
+    "likes" : 1
+}
