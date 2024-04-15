@@ -1,0 +1,7 @@
+GET http://localhost:10000/api/blogs
+
+### 
+GET http://localhost:10000/api/blogs/661bcea5b4f963166d9c49b5/comments
+
+
+

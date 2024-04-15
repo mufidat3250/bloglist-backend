@@ -14,7 +14,6 @@ const createBlog = async(req, res, next) => {
   try {
     const body = req.body
     const user = req.user
-    console.log({user})
     if(!body.title || !body.url){
       return res.status(400).send({
         error: "title or url is missing",
@@ -76,7 +75,7 @@ const updateBlog = async(req, res, next) => {
     const id = req.params.id
     const body = req.body
     const blogObject = {
-        likes: body.likes & Number(body.likes) + 1  
+        likes: body.likes 
       }
     const blog = await Blog.findByIdAndUpdate(id, blogObject, {new: true, runValidators: true})
     res.status(200).json(blog)
@@ -87,10 +86,11 @@ const updateBlog = async(req, res, next) => {
   }
 }
 
+
 module.exports = {
   getBlog,
   createBlog,
   deleteBlog,
   getSingleBlog,
-  updateBlog
+  updateBlog,
 };

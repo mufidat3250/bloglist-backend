@@ -1,10 +1,18 @@
-POST http://localhost:8000/api/blogs
+POST http://localhost:10000/api/blogs
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik9sdXdhcGVsdW1pIiwiaWQiOiI2NjA1ODJkMmQ2YmZiNWZiMWRiNTcyZDYiLCJpYXQiOjE3MTE2MzcyMjh9.Iud1G31NWzP10s3fkaON6EmS99QTILdvHE6XobsGPf4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik9tb2xhYmFrJ3MiLCJpZCI6IjY2MDZlYjY4ODBhOTZlNmY0MjUwNGRmNiIsImlhdCI6MTcxMTcyOTU0Nn0.f26umyy7SWtMki-jSUFB9kTTkw-zwZirQ79NQxOT9rI
 
 {
-    "title":"I am progressing in all of my ways",
-    "author": "Wahab",
+    "title":"emergency",
+    "author": "Olorunda",
     "url" : "http://localhost:8000/workingformygood",
     "likes" : 1
+}
+###
+POST http://localhost:10000/api/blogs/661bcea5b4f963166d9c49b5/comments
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik9tb2xhYmFrJ3MiLCJpZCI6IjY2MDZlYjY4ODBhOTZlNmY0MjUwNGRmNiIsImlhdCI6MTcxMTcyOTU0Nn0.f26umyy7SWtMki-jSUFB9kTTkw-zwZirQ79NQxOT9rI
+
+{
+    "comment" : "wWWW"
 }

@@ -1,8 +1,8 @@
-POST http://localhost:8000/api/users
+POST http:localhost:10000/api/testing/reset
 Content-Type: application/json
 
 {
-    "username":"Oluwapelumi",
-    "name":"Aramide Oluwatobi",
+    "username":"",
+    "name":"Omolabake Aramide",
     "password":"iyanu3250"
 }
